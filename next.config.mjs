@@ -4,8 +4,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/test_react_next.js_week5',
-  assetPrefix: '/test_react_next.js_week5/',
+  basePath: process.env.NODE_ENV === 'production' ? '/test_react_next.js_week5' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/test_react_next.js_week5/' : '',
 };
 
 export default nextConfig;
