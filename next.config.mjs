@@ -6,6 +6,7 @@ const nextConfig = {
   },
   basePath: process.env.NODE_ENV === 'production' ? '/test_react_next.js_week5' : '',
   assetPrefix: process.env.NODE_ENV === 'production' ? '/test_react_next.js_week5/' : '',
+  trailingSlash: true,
 };
 
 export default nextConfig;
