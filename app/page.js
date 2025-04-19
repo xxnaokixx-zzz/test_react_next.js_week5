@@ -3,6 +3,8 @@ import Link from "next/link";
 import styles from "./page.module.css";
 import Counter from "./Counter";
 
+const postIds = [1, 2, 3];
+
 export default function Home() {
   return (
     <div className={styles.page}>
@@ -20,12 +22,22 @@ export default function Home() {
             Get started by editing <code>app/page.js</code>.
           </li>
           <li>Save and see your changes instantly.</li>
-          <li>こんにちは</li>
         </ol>
 
-        <Link href="/about">About</Link>
+        <Link href="/about">Aboutに遷移</Link>
 
         <Counter />
+
+        <div style={{ marginTop: '2rem' }}>
+          <h2>記事一覧</h2>
+          <ul>
+            {postIds.map((id) => (
+              <li key={id}>
+                <Link href={`/post/${id}`}>記事 {id}</Link>
+              </li>
+            ))}
+          </ul>
+        </div>
 
         <div className={styles.ctas}>
           <a
