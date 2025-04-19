@@ -23,20 +23,9 @@ export default function Home() {
           <li>こんにちは</li>
         </ol>
 
-        <Counter />
+        <Link href="/about">About</Link>
 
-        <div style={{ marginTop: '2rem' }}>
-          <Link href="/about" style={{
-            padding: '0.5rem 1rem',
-            backgroundColor: '#2196F3',
-            color: 'white',
-            textDecoration: 'none',
-            borderRadius: '4px',
-            display: 'inline-block'
-          }}>
-            Aboutページへ
-          </Link>
-        </div>
+        <Counter />
 
         <div className={styles.ctas}>
           <a
