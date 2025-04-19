@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./page.module.css";
 import Counter from "./Counter";
 
@@ -23,6 +24,19 @@ export default function Home() {
         </ol>
 
         <Counter />
+
+        <div style={{ marginTop: '2rem' }}>
+          <Link href="/about" style={{
+            padding: '0.5rem 1rem',
+            backgroundColor: '#2196F3',
+            color: 'white',
+            textDecoration: 'none',
+            borderRadius: '4px',
+            display: 'inline-block'
+          }}>
+            Aboutページへ
+          </Link>
+        </div>
 
         <div className={styles.ctas}>
           <a
