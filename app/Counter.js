@@ -35,6 +35,20 @@ export default function Counter() {
           -1
         </button>
         <button
+          onClick={() => setCount(0)}
+          style={{
+            padding: '0.5rem 1rem',
+            fontSize: '1rem',
+            backgroundColor: '#2196F3',
+            color: 'white',
+            border: 'none',
+            borderRadius: '4px',
+            cursor: 'pointer'
+          }}
+        >
+          リセット
+        </button>
+        <button
           onClick={() => setCount(count + 1)}
           style={{
             padding: '0.5rem 1rem',
